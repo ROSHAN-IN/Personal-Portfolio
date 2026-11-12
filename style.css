@@ -157,3 +157,43 @@ nav a:hover {
 .education-card h3 {
     color: #222;
 }
+
+/* Skills Section */
+
+#skills {
+    padding: 70px 10%;
+    background-color: white;
+}
+
+#skills h2 {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+#skills p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.skill {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.skill h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #e5e7eb;
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #2563eb;
+    height: 100%;
+    border-radius: 10px;
+}
