@@ -402,3 +402,95 @@ nav a:hover {
 #formMessage {
     font-size: 14px;
 }
+
+/* Theme Toggle Button */
+
+#themeToggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#themeToggle:hover {
+    background-color: #1748ad;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #121826;
+    color: #f1f5f9;
+}
+
+.dark-mode nav,
+.dark-mode #about,
+.dark-mode #skills,
+.dark-mode #hobbies,
+.dark-mode #contact {
+    background-color: #1e293b;
+}
+
+.dark-mode #education,
+.dark-mode #projects,
+.dark-mode #achievements {
+    background-color: #121826;
+}
+
+.dark-mode nav a,
+.dark-mode #home h1,
+.dark-mode .education-card h3,
+.dark-mode .project-card h3,
+.dark-mode .hobby-card h3,
+.dark-mode .achievement-card h3 {
+    color: #f1f5f9;
+}
+
+.dark-mode #home p,
+.dark-mode #about p,
+.dark-mode #education p,
+.dark-mode #skills p,
+.dark-mode #projects p,
+.dark-mode #hobbies p,
+.dark-mode #achievements p,
+.dark-mode #contact p {
+    color: #cbd5e1;
+}
+
+.dark-mode .education-card,
+.dark-mode .project-card,
+.dark-mode .hobby-card,
+.dark-mode .achievement-card {
+    background-color: #334155;
+}
+
+.dark-mode .progress-bar {
+    background-color: #475569;
+}
+
+.dark-mode #contactForm input,
+.dark-mode #contactForm textarea {
+    background-color: #334155;
+    color: white;
+    border-color: #64748b;
+}
+
+.dark-mode #contactForm input::placeholder,
+.dark-mode #contactForm textarea::placeholder {
+    color: #cbd5e1;
+}
+
+.dark-mode nav a:hover {
+    color: #60a5fa;
+}
+
+/* Mobile Navbar Adjustment */
+
+@media (max-width: 768px) {
+    #themeToggle {
+        margin-top: 10px;
+    }
+}

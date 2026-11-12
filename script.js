@@ -31,3 +31,30 @@ contactForm.addEventListener("submit", function(event) {
 
     contactForm.reset();
 });
+
+/* Dark Mode and Light Mode */
+
+const themeToggle = document.getElementById("themeToggle");
+
+// Check previously selected theme
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️ Light Mode";
+}
+
+// Change theme when button is clicked
+themeToggle.addEventListener("click", function() {
+
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeToggle.textContent = "☀️ Light Mode";
+        localStorage.setItem("theme", "dark");
+    } else {
+        themeToggle.textContent = "🌙 Dark Mode";
+        localStorage.setItem("theme", "light");
+    }
+
+});
