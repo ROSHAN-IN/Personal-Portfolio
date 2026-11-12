@@ -333,3 +333,72 @@ nav a:hover {
         width: 100%;
     }
 }
+
+/* Contact Section */
+
+#contact {
+    padding: 70px 10%;
+    background-color: white;
+}
+
+#contact h2 {
+    color: #2563eb;
+    font-size: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contact-info,
+#contactForm {
+    flex: 1 1 280px;
+}
+
+.contact-info p {
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #2563eb;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contactForm button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #1748ad;
+}
+
+#formMessage {
+    font-size: 14px;
+}
