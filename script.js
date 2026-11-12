@@ -58,3 +58,50 @@ themeToggle.addEventListener("click", function() {
     }
 
 });
+
+/* Mobile Navigation */
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function() {
+    navLinks.classList.toggle("show");
+
+    const isOpen = navLinks.classList.contains("show");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+});
+
+/* Active Navigation Link */
+
+const navItems = document.querySelectorAll("#navLinks a");
+const sections = document.querySelectorAll("section[id]");
+
+function updateActiveLink() {
+    let currentSection = "home";
+
+    sections.forEach(function(section) {
+        if (window.scrollY + 180 >= section.offsetTop) {
+            currentSection = section.id;
+        }
+    });
+
+    navItems.forEach(function(link) {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + currentSection) {
+            link.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", updateActiveLink);
+updateActiveLink();
+
+/* Close Mobile Menu After Clicking Link */
+
+navItems.forEach(function(link) {
+    link.addEventListener("click", function() {
+        navLinks.classList.remove("show");
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});

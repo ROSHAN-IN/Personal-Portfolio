@@ -14,22 +14,35 @@
 <body>
 
     <!-- Navigation Bar -->
-    <header>
-        <nav> 
-            <li><a href="#hobbies">Hobbies</a></li>
-<li><a href="#achievements">Achievements</a></li>
-            <h2>My Portfolio</h2>
+    
+<header>
+    <nav>
+        <h2>My Portfolio</h2>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle" type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <ul id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="themeToggle" type="button">
+            🌙 Dark Mode
+        </button>
+    </nav>
+</header>
+
 
     <!-- Home Section -->
     <section id="home">
