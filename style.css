@@ -1,0 +1,117 @@
+
+/* Basic Website Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+}
+
+nav h2 {
+    color: #2563eb;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Home Section */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 10%;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#home h3 {
+    font-size: 23px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+#home p {
+    max-width: 550px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background-color: #1748ad;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home {
+        padding: 50px 20px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+}
