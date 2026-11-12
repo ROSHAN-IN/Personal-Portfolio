@@ -115,3 +115,45 @@ nav a:hover {
         font-size: 30px;
     }
 }
+
+/* About Me Section */
+
+#about {
+    padding: 70px 10%;
+    background-color: white;
+}
+
+#about h2 {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+#about p {
+    max-width: 750px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Education Section */
+
+#education {
+    padding: 70px 10%;
+    background-color: #f5f7fb;
+}
+
+#education h2 {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+.education-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 550px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.education-card h3 {
+    color: #222;
+}
